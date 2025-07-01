@@ -1,38 +1,80 @@
-import style from './style.css'
+import style from "./style.css";
 export default function InfoCard() {
   const CarData = [
     {
-      id: "1",
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
       Name: "Tata Harier",
       MaxSpeed: "120",
       Date: "25/12/2023",
     },
     {
-      id: "2",
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
       Name: "Tata Harier",
       MaxSpeed: "120",
       Date: "25/12/2023",
     },
     {
-      id: "3",
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
       Name: "Tata Harier",
       MaxSpeed: "120",
       Date: "25/12/2023",
     },
     {
-      id: "4",
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
       Name: "Tata Harier",
       MaxSpeed: "120",
       Date: "25/12/2023",
     },
     {
-      id: "5",
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
       Name: "Tata Harier",
       MaxSpeed: "120",
       Date: "25/12/2023",
     },
     {
-      id: "6",
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
+      Name: "Tata Harier",
+      MaxSpeed: "120",
+      Date: "25/12/2023",
+    },
+    {
+      url: "https://www.financialexpress.com/wp-content/uploads/2023/02/Tata-Harrier-Red-Dark-edition-1.jpg",
       Name: "Tata Harier",
       MaxSpeed: "120",
       Date: "25/12/2023",
@@ -41,13 +83,17 @@ export default function InfoCard() {
   return (
     <>
       <div className="container">
-        {CarData.map((data, index) => (
-          <div className="CarInfo" key={index}>
-            <h4>Name:{data.Name}</h4>
-            <h4>Max-Speed{data.MaxSpeed}</h4>
-            <h4>Date:{data.Date}</h4>
-          </div>
-        ))}
+        <div className="CarInfo">
+          {CarData.map((data, index) => (
+            <div className="card" key={index}>
+              <img src={data.url} alt="Error" />
+              <h4>Name:{data.Name}</h4>
+              <h4>Max-Speed:{data.MaxSpeed}</h4>
+              <h4>Date:{data.Date}</h4>
+              <button >Purchase</button>
+            </div>
+          ))}
+        </div>
       </div>
     </>
   );
